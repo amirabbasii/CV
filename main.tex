@@ -1,0 +1,202 @@
+
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+\usepackage{hyperref}		
+\usepackage{datetime}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+	\textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\sectionfont{%			            % Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{1pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}		% Vertical space macro
+
+
+\newcommand{\dline}{\newline \newline}
+
+\newcommand{\MyName}[1]{ % Name
+                \Huge \hfill #1
+                \par \normalsize \normalfont}
+\newcommand{\MyEmail}[1]{ % email
+                \small \hfill #1
+                \par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{{#1}}}
+
+\begin{document}
+\MyName{Amir Abbasi}
+% \MyEmail{}
+
+\NewPart{Education}
+\begin{itemize}
+\item{B.S. in Computer Engineering, GPA: 18.16/20} \date{\begin{flushleft}\today\end{flushleft}} \hfill Sep 2017 - Jul 2021(Expected)
+
+\end{itemize}
+
+
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\NewPart{Personal info}
+\textbf{Name:} Amir Abbasi \newline
+\textbf{Email Address:} amir.abbasi.rose@gmail.com \newline
+\textbf{Phone number:} +98(0)9363242510 \newline
+\textbf{Homepage:} \href{https://amirabbasii.github.io}{amir.abbasii.github.io} \newline
+
+%%% Personal details
+%%% ------------------------------------------------------------
+
+\NewPart{Research Interests}
+\textbf{Primary areas:}
+\begin{itemize}
+\item \textbf{Reinforcement Learning:} This is the area that I am very interested in and I work in it as the main area. 
+\item \textbf{Adversarial learning:} I'm seeking to utilize this type of learning in other learning methods(especially in RL).Also I'm interested in using GANs to generate unrealisitc images.
+\end{itemize} \newline
+\textbf{Secondary areas:}
+\begin{itemize}
+\item \textbf{Computer Vision}
+\item \textbf{Medical Imaging:} I worked on a medical imaging task and I think it's very interesting to use AI in heathcare.
+\end{itemize}
+
+\NewPart{Academic background}
+Machine Learning,Deep learning,Adversarial Learning,Reinforcement Learning \newline
+Transfer Learning,Multi-task Learning
+
+\NewPart{Research Assistant Experiences}
+\textbf{Sperm abnormality detection} \hfill Sep 2019 – Aug 2020 \newline
+Under supervision of \href{https://staff.guilan.ac.ir/mirroshandel/?lg=1}{Dr. S. A. Mirroshandel} \newline
+$\cdot$ \footnotesize  \I worked on a Computer Vision task to make some models to detect sperm abnormality detection and we utilized transfer and multitask learning. \newline
+\newline
+\textbf{Generative models is medical imaging} \hfill Nov 2020-Present \newline
+Under supervision of \href{https://staff.guilan.ac.ir/mirroshandel/?lg=1}{Dr. S. A. Mirroshandel} \newline
+$\cdot$ \footnotesize  \I'm currently working on a medical imaging task to use GANs for generating medical images.
+
+\NewPart{Research Papers}
+\begin{itemize}
+
+\item Effect of deep transfer and multi-task learning on sperm abnormality detection \newline
+\textbf{A. Abbasi}, E. Miahi, S. A. Mirroshandel \newline
+Computers in Biology and Medicine, Jan. 2020. \href{https://www.sciencedirect.com/science/article/pii/S0010482520304522}{(published)}
+
+\item GANs in generating medical images \newline
+\textbf{A. Abbasi},S. Bahrami,S. Hemmati,P. Mellatdoost,S. A. Mirroshandel (in prep.)
+\end{itemize}
+
+
+\NewPart{Course Assistant Experiences} 
+
+\textbf{ \href{https://www.coursera.org/learn/fundamentals-of-reinforcement-learning}{Funcdematals of Reinforecment Learning}} \footnotesize \hfill Oct 2020-Present
+\begin{itemize}
+\footnotesize Instructors:Adam White,Martha White \hfill Coursera \newline 
+\newline
+\footnotesize{This course is the first course of \href{https://www.coursera.org/specializations/reinforcement-learning}{\underline{Reinforcement Learning Specialization}} which is one of MOOC courses offered by University Of Alberta and it's used in some of Reinforcement Learning courses as assignment in University Of Alberta.}
+\end{itemize}
+\NewPart{Teaching Assistant Experiences}
+
+\begin{itemize}
+\item{\textbf{Artificial Intelligence:} \hfill Fall 2020 \newline
+$\cdot$ \footnotesize I designed some of assignments and final project of course.The project was about using A* algorithm in to play a game.
+\item{\textbf{Computational Intelligence:} \textbf{Head TA} \hfill Winter 2020 \newline
+$\cdot$ \footnotesize I designed list of final projects(with collaboration of the teacher) and also recorded some videos to teach Pytorch.
+\item{\textbf{Data Structures:} \textbf{Head TA} \hfill Fall 2020 \newline
+$\cdot$ \footnotesize We designed 3 programming assignment(each assignment has about 5 questions) and also a final project.Finally we evaluated projects.
+\item{\textbf{Advanced Programming:} \textbf{Head TA} \hfill Winter 2020 \newline
+$\cdot$ \footnotesize It was a very hard semester due to spreading of Corona virus and was the first time that I had to lead students online.We designed 6 projects,held discussion sessions online and evaluated projects.Fortunately it finished well like a normal semester.
+\item{\textbf{Data Structures:} \textbf{Head TA} \hfill Fall 2019 \newline
+$\cdot$ \footnotesize I designed several projects(2 of 5) and also held discussion sessions.Also I evaluated projects of students(with collaboration of other TAs).
+
+\item{\textbf{Advanced Programming:} \hfill Winter 2019 \newline
+$\cdot$ \footnotesize My duty was designing several projects(3 of 7) and also do some of programming examples(such as fundamentals of Java,OOP,Swing,Mutli-threading and Socket Programmig) to teach students.Also I evaluated projects of students(with collaboration of other TAs).
+
+\end{itemize}
+
+\NewPart{Leadership Experiences}
+{\textbf{Ideal Intelligence journal} \hfill \footnotesize Jan 2021-Present \newline
+\footnotesize Content producer \hfill University of Kharazmi \newline
+\footnotesize $\cdot$  I'm a content producer in a magazine that profesionaly is about AI and our goal is to write scientific articles about lots of AI fields.I mainly write about Reinforcement Learning and some of Computer Vision subjects.
+}
+\newline
+\newline
+{
+\textbf{AI community} \hfill \footnotesize Jan 2021-Present\newline
+\footnotesize Leader \hfill University of Kharazmi \newline
+\footnotesize $\cdot$  I constituted an AI community to absorb and guide other students to learn AI.The main activity of this community is to hold some meetups every month.Note that the idea of constituting this community derived from a community in University of Guilan which helped me to start learn AI.
+
+}
+
+\NewPart{Skills}
+C++,Java,Python,VHDL,Keras,Pytorch,LaTex
+
+\NewPart{Self accomplished projects}
+\begin{itemize}
+    
+    \item \textbf{learn Tic-Tac-Toe:A simple adversarial tabular Q-learning approach}
+    \item \textbf{Iran Stock prediction}
+    \item \textbf{Oocyte Segmentation } \href{https://colab.research.google.com/drive/1zIRFSCfcLPRucaLF2GXegeOdCgjLZYTA?usp=sharing}{(link)}   
+     \item \textbf{Don't overfit!;Kaggle} \href{https://colab.research.google.com/drive/1KByeRkWlJtuq1nUBYs_46Rt4cpdRRW2M?usp=sharing}{(link)}
+
+\end{itemize}
+\NewPart{Certifications}
+\begin{itemize}
+
+\item \small \textbf{Reinforcement Learning Specialization} \href{http://coursera.org/verify/specialization/S4WB3X7GUWS3}{(Certificate)} \hfill Sep 2020 \newline
+\footnotesize Coursera,Instructors:Adam \& Martha White
+\item \small \textbf{Practical Reinforcement Learning} \href{http://coursera.org/verify/XNZUDEGL2W76}{(Certificate)} \hfill Dec 2020 \newline
+Coursera
+\item \small \textbf{Build Basic Generative Adversarial Networks(GANs)} \href{http://coursera.org/verify/XH3W8DC5DYV6}{(Certificate)} \hfill Oct 2020 \newline
+Coursera
+\item \small \textbf{Deep Learning Specialization} \href{}{(Certificate)} \hfill Dec 2018 \newline
+\footnotesize Coursera,Instructor:Andew Ng. 
+\item \small \textbf{Machine Learning} \href{}{(Certificate)} \hfill Dec 2018 \newline
+\footnotesize Coursera,Instructor:Andrew Ng. 
+\item \small \textbf{Java Cup:Java programmer certificate} \href{https://drive.google.com/file/d/1YTwEyrwLsdsbC-Hfo7t-j1eJyuE6mVdi/view?usp=sharing}{(Certificate)} \hfill Oct 2018 \newline
+Javacup Association
+\end{itemize}
+\NewPart{Presentations}
+\textbf{Reinforcement Learning;A survey} \dline
+\textbf{Best courses of Reinforcement Learning} \dline
+\textbf{AI learning path} \dline
+\textbf{Introduction to Pytorch} \dline
+\textbf{DDOS attacks} \dline
+
+
+\NewPart{Honors \& Awards}
+\textbf{Full Scholarship, B.sc, University of Guilan} \hfill July 2017 \newline
+\footnotesize Ranked top \%3 in the National University Exam in more than 148,000 participants. \newline
+\newline
+\textbf{Exceptional Talent} \hfill Jan 2021 \newline
+\footnotesize Ranked within the top \%15 among 71 graduates of Computer Engineering class
+
+%%% ------------------------------------------------------------
+\NewPart{References}
+
+\textbf{Dr. Seyed Abolghasem Mirroshandel} \hfill University of Guilan \newline
+\footnotesize $\cdot$ Head of Computer Engineering Department and Associate Professor \hfill \href{https://staff.guilan.ac.ir/mirroshandel/?lg=1}{Homepage}  \newline
+\footnotesize mirroshandel@guilan.ac.ir \newline
+\newline
+\newline
+\textbf{Dr. Seyed Mohammadhossein Shekarian} \hfill University of Guilan \newline
+\footnotesize $\cdot$ Assistant Professor \hfill \href{https://staff.guilan.ac.ir/shekarian/index.php?a=0&lg=1}{Homepage} \newline
+\footnotesize shekarian@guilan.ac.ir \newline
+
+
+
+\end{document}
